@@ -1,3 +1,3 @@
 # wax
 
-This project has options for dark or light themes.
+In this project you can change the theme from dark to light vice versa.
