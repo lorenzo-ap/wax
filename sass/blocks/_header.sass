@@ -1,0 +1,81 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__logo
+        position: relative
+        width: 85px
+        height: 34px
+        text-decoration: none
+        &-icon
+            position: absolute
+            top: 0
+            left: 0
+            vertical-align: bottom
+            opacity: 0
+            z-index: -1
+            transition: opacity .5s ease
+            &_active
+                opacity: 1
+                z-index: 1
+    &__action
+        display: flex
+        justify-content: center
+        align-items: center
+    &__navigation
+        margin-right: 61px
+    &__list
+        display: flex
+        justify-content: center
+        align-items: center
+        list-style: none
+    &__item
+        &:not(:last-child)
+            margin-right: 41px
+    &__link
+        position: relative
+        font-size: 14px
+        font-weight: 600
+        line-height: 17px
+        text-decoration: none
+        text-transform: uppercase
+        color: $main-color
+        transition: color .3s ease
+        &:hover
+            color: #fff
+        &_light
+            color: #5B4E69
+            &:hover
+                color: #000
+    &__social
+        display: flex
+        justify-content: center
+        align-items: center
+        &-link
+            position: relative
+            width: 41px
+            height: 41px
+            margin: 0
+            padding: 0
+            font-size: 0
+            text-decoration: none
+            outline: none
+            border: none
+            background: none
+            cursor: pointer
+            transition: transform .2s ease
+            &:not(:last-child)
+                margin-right: 20px
+            &:hover
+                transform: translateY(-3px)
+    &__theme
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        z-index: -1
+        transition: opacity .2s ease, transform .75s ease
+        &_active
+            opacity: 1
+            transform: rotate(360deg)
+            z-index: 1

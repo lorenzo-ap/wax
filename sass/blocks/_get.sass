@@ -1,0 +1,141 @@
+.get
+    overflow: hidden
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-end
+        padding-bottom: 80px
+    &__image
+        position: relative
+        margin-bottom: 66px
+    &__header
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 157px
+    &__info
+        padding-right: 60px
+    &__tokens
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 66px
+    &__name
+        @include text-semibold
+        color: $main-color
+        transition: color .5s ease
+        &_light
+            color: $dark-second
+    &__code
+        padding: 2px
+        border-radius: 30px
+        background: linear-gradient(135deg, #9201C0, #D6959A, #0062F5)
+        &-wrapper
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 25px 45px
+            border-radius: 28px
+            background: linear-gradient(#281A37, #140821)
+            transition: background-color .5s ease
+        &_light
+            .get__code-wrapper
+                background: none
+                background-color: #F6F3F9
+            .get__digits
+                color: $dark-third
+    &__digits
+        @include text-semibold
+        margin-right: 125px
+        color: $third-color
+    &__calc
+        display: flex
+        justify-content: center
+        align-items: center
+    &__before
+        @include text-semibold
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 225px
+        height: 85px
+        border-radius: 30px
+        box-shadow: 0px 0px 30px 0px #0000000D
+        background-color: #281A37
+        color: $third-color
+        transition: background-color .5s ease, color .5s ease
+        &_light
+            background-color: #F6F3F9
+            color: $dark-second
+    &__arrows
+        margin: 0 78px
+        font-size: 10px
+        &_dark
+            margin: 0 78px
+            font-size: 10px
+    &__arrow
+        &:first-child
+            opacity: 0
+            animation-name: arrow
+            animation-duration: 3.5s
+            animation-delay: 2s
+            animation-iteration-count: infinite
+        &:nth-child(2)
+            opacity: 0
+            animation-name: arrow
+            animation-duration: 3.5s
+            animation-delay: 1.5s
+            animation-iteration-count: infinite
+        &:nth-child(3)
+            opacity: 0
+            animation-name: arrow
+            animation-duration: 3.5s
+            animation-delay: 1s
+            animation-iteration-count: infinite
+        &:last-child
+            opacity: 0
+            animation-name: arrow
+            animation-duration: 3.5s
+            animation-delay: 0.5s
+            animation-iteration-count: infinite
+    &__after
+        @include text-semibold
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 225px
+        height: 85px
+        border-radius: 30px
+        box-shadow: 0px 0px 30px 0px #0000000D
+        background-color: #6F2BFF
+        color: #fff
+    &__recieve
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 34px
+    &__copy
+        transition: transform .2s ease
+        &:hover
+            transform: scale(1.05)
+    &__desc
+        @include text-semibold
+        font-size: 20px
+        line-height: 1.2
+        text-align: right
+        color: #7c7385
+        transition: color .5s ease
+        .bold
+            color: $main-color
+            transition: color .5s ease
+        &:first-of-type
+            margin-bottom: 22px
+        &_light
+            color: $dark-third
+            .bold
+                color: $dark-third
+    &__circle
+        position: absolute
+        top: 195px
+        left: -109px

@@ -1,0 +1,37 @@
+@import "libs/fonts"
+@import "base/variables"
+@import "base/mixins"
+@import "base/animations"
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    scroll-behavior: smooth
+
+body
+    color: #fff
+    background-color: #0D001B
+    font-family: 'Montserrat', sans-serif
+    transition: background-color .5s ease
+
+.hidden
+    display: none
+
+.light
+    background-color: #ECE6F3
+
+.container
+    position: relative
+    max-width: 1440px
+    margin: 0 auto
+
+.bold
+    font-weight: 800
+
+@import "blocks/headers"
+@import "blocks/promo"
+@import "blocks/header"
+@import "blocks/about"
+@import "blocks/get"
+@import "blocks/last"

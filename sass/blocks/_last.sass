@@ -1,0 +1,121 @@
+.last
+    overflow: hidden
+    &__container
+        padding-top: 70px
+        padding-bottom: 50px
+    &__header
+        margin-bottom: 67px
+        text-align: center
+    &__image
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+    &__table
+        position: relative
+        margin: 0 auto
+        margin-bottom: 57px
+        padding: 10px 54px
+        border-radius: 30px
+        border-spacing: 0 30px
+        background-color: rgba(24, 11, 38, 0.6)
+        backdrop-filter: blur(4px)
+        &_light
+            background: linear-gradient(135deg, rgba(192, 135, 219, 0.6), rgba(238, 58, 220, 0.6), rgba(250, 159, 94, 0.6), rgba(60, 155, 246, 0.6))
+            .last__th
+                color: rgba(255, 219, 236, 0.85)
+                &:not(:last-child)
+                    &::before
+                        background-color: #fff
+
+            .last__td
+                &:not(:last-child)
+                    &::before
+                        background-color: #fff
+                &:nth-child(2)
+                    color: rgba(228, 239, 255, 0.8)
+                &:last-child
+                    color: rgba(228, 239, 255, 0.8)
+    &__tbody
+        .last__tr
+            &:nth-last-child(6)
+                opacity: .9
+            &:nth-last-child(5)
+                opacity: .8
+            &:nth-last-child(4)
+                opacity: .7
+            &:nth-last-child(3)
+                opacity: .6
+            &:nth-last-child(2)
+                opacity: .5
+            &:last-child
+                opacity: .4
+    &__th
+        position: relative
+        font-size: 20px
+        font-weight: 600
+        line-height: 24px
+        text-align: left
+        color: #9180A0
+        &:not(:last-child)
+            &::before
+                content: ''
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                right: 0
+                width: 1px
+                height: 14px
+                background-color: #3A2E46
+        &:nth-child(2),
+        &:nth-child(3)
+            padding: 0 25px
+        &:last-child
+            padding-left: 25px
+    &__td
+        position: relative
+        font-size: 20px
+        font-weight: 600
+        line-height: 24px
+        transition: color .5s ease
+        &:not(:last-child)
+            &::before
+                content: ''
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                right: 0
+                width: 1px
+                height: 14px
+                background-color: #3A2E46
+        &:first-child
+            padding-right: 25px
+        &:nth-child(2)
+            color: #C8B6D9
+        &:nth-child(2),
+        &:nth-child(3)
+            padding: 0 25px
+        &:last-child
+            padding-left: 25px
+            color: #C8B6D9
+    &__copyright
+        font-size: 20px
+        font-weight: 600
+        line-height: 24px
+        text-align: center
+        color: #7f6898
+        transition: color .5s ease
+        &_light
+            color: #BBB1C8
+    &__circle
+        position: absolute
+        z-index: -1
+        &-1
+            top: 132px
+            left: 115px
+        &-2
+            bottom: 85px
+            left: 67px
+        &-3
+            top: 263px
+            right: 30px
